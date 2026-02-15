@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SpamShield</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+<nav class="navbar">
+  <div class="nav-left">
+    <h1>🛡 SpamShield</h1>
+  </div>
+  <div class="nav-right">
+    <button id="theme-toggle">🌙</button>
+  </div>
+</nav>
+
+
+<div class="container">
+  <div class="card">
+
+    <p class="tagline">Instantly detect spam & scam messages</p>
+
+    <textarea id="message-input" placeholder="Paste a suspicious message..."></textarea>
+
+    <button id="check-message-btn">Check Message</button>
+
+    <div id="result" class="result hidden">
+      <h2 id="risk-level"></h2>
+      <p id="score"></p>
+
+      <div class="meter">
+        <div id="meter-fill"></div>
+      </div>
+
+      <ul id="triggers"></ul>
+    </div>
+
+    <div class="history">
+      <h3>🕘 Scan History</h3>
+      <ul id="history-list"></ul>
+    </div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
